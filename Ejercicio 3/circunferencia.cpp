@@ -3,7 +3,8 @@ namespace Geometria {
     private:
         double radio;
     public:
-        Circulo(double r) : radio(r) {}º
+
+        Circulo(double r) : radio(r) {}
         double calcularArea() {
             return 3.14 * radio * radio;
         }
@@ -12,4 +13,3 @@ namespace Geometria {
         }
     };
 }
-
