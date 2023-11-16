@@ -27,7 +27,7 @@ int main() {
     cout << "Area: " << r.calcularArea() << endl;
     cout << "Perimetro: " << r.calcularPerimetro() << endl;
 
-    cout << "\nPulse Enter para continuar...";
+    cout << "\nPulse Enter para salir...";
     cin.get();
 
     return 0;
