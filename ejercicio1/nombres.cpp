@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-usenamespace std;
+using namespace std;
 
 namespace Matematicas {
     int suma(int a, int b) {
