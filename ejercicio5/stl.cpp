@@ -2,6 +2,7 @@
 #include <vector>
 #include <map>
 #include <set>
+#include <cstdio>
 
 int main() {
     std::vector<int> vector1;
@@ -22,6 +23,9 @@ int main() {
     mapa[2] = "dos";
     mapa[3] = "tres";
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     std::cout << "Elementos del mapa: " << std::endl;
     for (const auto& par : mapa) {
         std::cout << par.first << " -> " << par.second << std::endl;
@@ -33,12 +37,19 @@ int main() {
     Set.insert(20);
     Set.insert(30);
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     std::cout << "Elementos del set: " << std::endl;
     for (int elemento : Set) {
         std::cout << elemento << " ";
     }
     std::cout << std::endl;
 
+    std::cout << "\nPulse Enter para salir...";
+    std::cin.get();
+
     return 0;
 }
+
 
