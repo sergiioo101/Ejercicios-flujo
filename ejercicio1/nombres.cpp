@@ -48,11 +48,17 @@ int main() {
     resultadoSuma = std::stoi(outputSuma.str());
     std::cout << "Suma: " << resultadoSuma << std::endl;
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     // Área del círculo
     std::ostringstream outputResta;
     outputResta << Matematicas::resta(5, 3);
     resultadoResta = std::stoi(outputResta.str());
     std::cout << "Resta: " << resultadoResta << std::endl;
+
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
 
     // Área del pentágono
     std::ostringstream outputMultiplicacion;
@@ -60,17 +66,26 @@ int main() {
     resultadoMultiplicacion = std::stoi(outputMultiplicacion.str());
     std::cout << "Multiplicacion: " << resultadoMultiplicacion << std::endl;
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     // Área del decágono
     std::ostringstream outputDivision;
     outputDivision << Matematicas::division(6, 2);
     resultadoDivision = std::stoi(outputDivision.str());
     std::cout << "Division: " << resultadoDivision << std::endl;
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     // Área del cuadrado
     std::ostringstream outputCuadrado;
     outputCuadrado << Matematicas::cuadrado(5);
     resultadoCuadrado = std::stoi(outputCuadrado.str());
     std::cout << "Cuadrado de 5: " << resultadoCuadrado << std::endl;
+
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
 
     // Área del logaritmo
     std::ostringstream outputLogaritmo;

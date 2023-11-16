@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream>
-#include "geometria.h"
+#include "geometria.cpp"
 
 using namespace std;
 
@@ -19,11 +19,17 @@ int main() {
     Geometria::calcularYMostrarAreaTriangulo(inputTriangulo, outputTriangulo);
     cout << "Área del triángulo: " << outputTriangulo.str() << endl;
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     // Área del círculo
     istringstream inputCirculo(to_string(radioCirculo));
     ostringstream outputCirculo;
     Geometria::calcularYMostrarAreaCirculo(inputCirculo, outputCirculo);
     cout << "Área del círculo: " << outputCirculo.str() << endl;
+
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
 
     // Área del pentágono
     istringstream inputPentagono(to_string(ladoPentagono) + " " + to_string(apotemaPentagono));
@@ -31,11 +37,17 @@ int main() {
     Geometria::calcularYMostrarAreaPentagono(inputPentagono, outputPentagono);
     cout << "Área del pentágono: " << outputPentagono.str() << endl;
 
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
+
     // Área del decágono
     istringstream inputDecagono(to_string(ladoDecagono));
     ostringstream outputDecagono;
     Geometria::calcularYMostrarAreaDecagono(inputDecagono, outputDecagono);
     cout << "Área del decágono: " << outputDecagono.str() << endl;
+
+    std::cout << "\nPulse Enter para continuar...";
+    std::cin.get();
 
     // Área del cuadrado
     istringstream inputCuadrado(to_string(ladoCuadrado));
